@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>cafehashigo</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/index.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,366 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+          <h1>カフェはしご</h1>
+          <h2>Hackathon編</h2>
+        </section>
+				<section>
+          <h1>Today's Goal</h1>
+          <p>ググれば自力でWebサイトが作れるようになる</p>
+        </section>
+        <section>
+          <h2>Steps</h2>
+          <ol>
+            <li>HTMLが書ける</li>
+            <li>CSSが書ける</li>
+            <li>Localで動作を試せる</li>
+            <li>Gitが使える</li>
+            <li>Publishできる</li>
+          </ol>
+          <p>今日は4まで.</p>
+        </section>
+        <section>
+          <h2>Installするもの</h2>
+          <ul>
+            <li>Atom</li>
+            <li>Git Bash</li>
+          </ul>
+        </section>
+        <section>
+          <p>まずはGit Bashで</p>
+          <pre><code data-trim>
+            $ mkdir Projects
+            $ cd Projects
+            $ git clone git@github.com:S-Kazuki/cafehashigo.jp.git
+          </code></pre>
+        </section>
+        <section>
+          <h2>Atomの使い方</h2>
+        </section>
+        <section>
+          <h2>What's html? What's css?</h2>
+          <p>Webサイト = HTML + CSS</p>
+          <p>HTMLは"構造"を, CSSは"見た目"を司る</p>
+          <small>* HTML = Hyper Text Markup Language <br>
+            * CSS = Cascading Style Sheets</small>
+        </section>
+        <section>
+          <h2>htmlのお約束</h2>
+          <pre><code class="html" data-trim>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;utf-8&quot;&gt;
+                &lt;title&gt;&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h2>htmlの基本形</h2>
+          <p>&lt;タグ&gt;文章&lt;/タグ&gt;</p>
+          <p>&lt;タグ 属性名=値&gt;文章&lt;/タグ&gt;</p>
+
+          <h2>例えば</h2>
+          <pre><code class="html" data-trim>
+            <p>pタグはparagraph(段落)を作る</p>
+            <p class = 'message'>classはあとで説明するよ</p>
+          </code></pre>
+        </section>
+        <section>
+          <h2>Hello Worldしてみよう</h2>
+          <p>index.html</p>
+          <pre><code class="html" data-trim>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;utf-8&quot;&gt;
+                &lt;title&gt;&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                <p>Hello World!</p>
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <p>index.htmlをChromeで開くと</p>
+          <div class="white">
+            <p>Hello World!</p>
+          </div>
+        </section>
+        <section>
+          <h2>cssを読み込む</h2>
+          <ol>
+            <li>cssフォルダにindex.cssという空のファイルを作る.</li>
+            <li>index.htmlのhead内に以下のタグを追加する.</li>
+          </ol>
+          <pre><code class="html" data-trim>
+            <link rel="stylesheet" href="./css/index.css">
+          </code></pre>
+        </section>
+        <section>
+          <h2>cssの基本形</h2>
+          <p>セレクタ {プロパティ: 値}</p>
+          <h2>例えば</h2>
+          <pre><code class="css" data-trim>
+            p {
+              color: red;
+            }
+          </code></pre>
+        </section>
+        <section>
+          <h2>赤いHello world</h2>
+          <p>index.cssを</p>
+          <pre><code class="css" data-trim>
+            p {
+              color: red;
+            }
+          </code></pre>
+          として, index.htmlをChromeで開くと
+          <div class="white">
+            <p style="color: red">Hello World!</p>
+          </div>
+        </section>
+        <section>
+          <h1>ここからは一旦htmlの説明</h1>
+        </section>
+        <section>
+          <h2>コメントアウト</h2>
+          <p>こんなときに便利だよ</p>
+          <ul>
+            <li>codeを無効にしたいけど消したくないとき</li>
+            <li>codeの説明をしたいとき</li>
+          </ul>
+         <p>&lt;!--と--&gt;で囲めばコメントアウトできる</p>
+           <pre><code class="html" data-trim>
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+               &lt;head&gt;
+                 &lt;meta charset=&quot;utf-8&quot;&gt;
+                 &lt;title&gt;&lt;/title&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+                 <!-- ここはコメントアウトしてるよ  -->
+                 <!-- <p>Hello World!</p> -->
+               &lt;/body&gt;
+             &lt;/html&gt;
+           </code></pre>
+        </section>
+        <section>
+          <h2>idとclass</h2>
+          <p>htmlのタグに名前を付けられる</p>
+          <p>idはそのページに1つしか存在しないものに付ける</p>
+          <p>classは幾つか同じものがあるようなものに付ける</p>
+          <p>例えば</p>
+          <pre><code class="html" data-trim>
+            <p id='English_message'>Hello World!</p>
+            <p class="Japanese_message">おはよう世界</p>
+            <p class="Japanese_message">こんにちは世界</p>
+            <p class="Japanese_message">こんばんは世界</p>
+          </code></pre>
+          <p>idとclassはcssのセレクタとして使うために必要</p>
+        </section>
+        <section>
+          <section>
+            <h2>h1, h2, …, h6</h2>
+            <p>見出しを作る</p>
+            <p>h1が一番大きな見出し, h6が一番小さな見出し</p>
+          </section>
+          <section>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+            <h6>h6</h6>
+          </section>
+        </section>
+        <section>
+          <h2>p, br</h2>
+          <p>pはparagraph(段落)を作る</p>
+          <p>brはbreak(改行)する</p>
+          <pre><code class="html" data-trim>
+            <p>1段落目</p>
+            <p>2段落目1行目<br>2段落目2行目</p>
+          </code></pre>
+          <div class="white">
+            <p>1段落目</p>
+            <p>2段落目1行目<br>2段落目2行目</p>
+          </div>
+        </section>
+        <section>
+          <section>
+            <h2>divとspan</h2>
+            <p>どちらもそれ自身に意味はない</p>
+            <p>"かたまり"を作るために使う</p>
+            <p>divはブロック要素（その前後が改行される）</p>
+            <p>spanはインライン要素（その前後が改行されない）</p>
+          </section>
+          <section>
+            <p>html</p>
+            <pre><code class="html" data-trim>
+              <div class="red">
+                あいうえお
+              </div>
+              <div class="blue">
+                かきくけこ
+              </div>
+            </code></pre>
+            <p>css（詳しくはあとで説明）</p>
+            <pre><code class="css" data-trim>
+              .red {
+                color: red;
+              }
+
+              .blue {
+                color: blue;
+              }
+            </code></pre>
+            <div class="white">
+              <div style="color:red">
+                あいうえお
+              </div>
+              <div style="color:blue">
+                かきくけこ
+              </div>
+            </div>
+          </section>
+          <section>
+            <p>html</p>
+            <pre><code class="html" data-trim>
+              <span class="red">
+                あいうえお
+              </span>
+              <span class="blue">
+                かきくけこ
+              </span>
+            </code></pre>
+            <p>css（詳しくはあとで説明）</p>
+            <pre><code class="css" data-trim>
+              .red {
+                color: red;
+              }
+
+              .blue {
+                color: blue;
+              }
+            </code></pre>
+            <div class="white">
+              <span style="color:red">
+                あいうえお
+              </span>
+              <span style="color:blue">
+                かきくけこ
+              </span>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>ol, ul, li</h2>
+            <p>リストを作ることができる</p>
+            <p>olはordered list（順序のあるリスト）</p>
+            <p>ulはunordered list (順序のないリスト)</p>
+            <p>liはlist item (リストの項目)</p>
+          </section>
+          <section>
+            <pre><code class="html" data-trim>
+              <ol>
+                <li>1個目</li>
+                <li>2個目</li>
+                <li>3個目</li>
+              </ol>
+            </code></pre>
+            <div class="white">
+              <ol>
+                <li>1個目</li>
+                <li>2個目</li>
+                <li>3個目</li>
+              </ol>
+            </div>
+            <pre><code class="html" data-trim>
+              <ul>
+                <li>1個目</li>
+                <li>2個目</li>
+                <li>3個目</li>
+              </ul>
+            </code></pre>
+            <div class="white">
+              <ul>
+                <li>1個目</li>
+                <li>2個目</li>
+                <li>3個目</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>a</h2>
+          <p>Anchorの略でリンクの出発点と到達点を指定する</p>
+          <pre><code class="html" data-trim>
+            <a href="http://google.com"><p>Google</p></a>
+            <a href="http://jurakudai.org">聚楽第</a>
+          </code></pre>
+          <div class="white">
+            <a href="http://google.com"><p>Google</p></a>
+            <a href="http://jurakudai.org"><p>聚楽第</p></a>
+          </div>
+        </section>
+        <section>
+          <section>
+            <h2>img</h2>
+            <p>src属性で画像を指定する, alt属性で画像が表示できなかった場合に代わりに表示する文字を指定する</p>
+            <pre><code class="html" data-trim>
+              <img src="./img/jurakudai_logo.png" alt="聚楽第logo">
+              <img src="./img/revoneo_logo.png" alt="レボネオlogo">
+            </code></pre>
+            <div class="white">
+              <img src="./img/jurakudai_logo.png" alt="聚楽第logo">
+              <img src="./img/revoneo_logo.png" alt="レボネオlogo">
+            </div>
+          </section>
+          <section>
+            <p>srcが間違っていたりすると...</p>
+            <pre><code class="html" data-trim>
+              <img src="./img/jurakudai_log.png" alt="聚楽第logo">
+              <img src="./img/revoneo_log.png" alt="レボネオlogo">
+            </code></pre>
+            <div class="white">
+              <img src="./img/jurakudai_log.png" alt="聚楽第logo">
+              <img src="./img/revoneo_log.png" alt="レボネオlogo">
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>button</h2>
+          <p>ボタンを作る</p>
+          <pre><code class="html" data-trim>
+            <button>押してね</button>
+          </code></pre>
+          <div class="white">
+            <button>押してね</button>
+          </div>
+        </section>
+        <section>
+          <h2>table</h2>
+          <p>表を作る</p>
+        </section>
+        <section>
+          <section>
+            <h2>form, input</h2>
+            <p>入力フォームを作る</p>
+          </section>
+          <section>
+            <h2>checkbox, radio, select</h2>
+            <p>チェックボックス、ラジオボタン、セレクトボックスを作る</p>
+          </section>
+        </section>
+        <section>
+          <h1>ここからはcssの説明</h1>
+        </section>
 			</div>
 		</div>
 
@@ -37,6 +396,8 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+        history: true,
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
