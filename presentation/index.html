@@ -127,7 +127,7 @@
         </section>
         <section>
           <h2>cssの基本形</h2>
-          <p>セレクタ {プロパティ: 値}</p>
+          <p>セレクタ {プロパティ: 値;}</p>
           <h2>例えば</h2>
           <pre><code class="css" data-trim>
             p {
@@ -384,6 +384,80 @@
         </section>
         <section>
           <h1>ここからはcssの説明</h1>
+        </section>
+        <section>
+          <h2>cssの基礎の復習</h2>
+          <ul>
+            <li><p>cssはWebサイトの見た目を作る</p></li>
+            <li><p>cssを読み込むにはhtmlのhead内に</p>
+            <pre><code class="html" data-trim>
+              <link rel="stylesheet" href="./css/index.css">
+            </code></pre>
+            <p>と書けばよかった</p></li>
+            <li><p>cssの基本形は<br>セレクタ {プロパティ: 値;}<br>例えば</p></li>
+            <pre><code class="css" data-trim>
+              p {
+                color: red;
+              }
+            </code></pre>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h2>色々なセレクタ</h2>
+            <ul>
+              <li><p>ユニバーサルセレクタ <br> → 要素全部を指定 <br> 書き方: *</p></li>
+              <li><p>要素セレクタ <br> → 各要素を指定 <br> 例: p, h1, div</p></li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li><p>idセレクタ <br> → 各idを指定 <br> 書き方: #id名</p></li>
+              <li><p>classセレクタ <br> → 各classを指定 <br> 書き方: .class名</p></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>複数のプロパティを書くには</h2>
+          <p>セレクタ {プロパティ1: 値1; プロパティ2: 値2;} <br> とするだけ</p>
+          <p>例えば</p>
+          <pre><code class="css" data-trim>
+            p {
+              color: red;
+              background-color: blue;
+            }
+          </code></pre>
+        </section>
+        <section>
+          <section>
+            <h2>セレクタ応用編</h2>
+            <p>2つのセレクタaとbを考える <br> 例えば, divとpとか</p>
+            <ul>
+              <li><p>a, b {スタイル} <br> aにもbにもスタイルが適用される</p></li>
+              <li><p>a b {スタイル} <br> aの下にあるbにスタイルが適用される</p></li>
+              <li><p>a > b {スタイル} <br> aの直下にあるbにスタイルが適用される</p></li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li><p>a + b {スタイル} <br> aの次に来るbにスタイルが適用される</p></li>
+              <li><p>ab {スタイル} <br> aであってbでもあるものにスタイルが適用される</p></li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>コメントアウト</h2>
+          <p>こんなときに便利だよ</p>
+          <ul>
+            <li>codeを無効にしたいけど消したくないとき</li>
+            <li>codeの説明をしたいとき</li>
+          </ul>
+         <p>/*と*/で囲めばコメントアウトできる</p>
+        </section>
+        <section>
+          <h2>color</h2>
+          <p>文字の色を変える</p>
         </section>
 			</div>
 		</div>
