@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  width: 80%;
+  height: 3rem;
+  margin: 1rem 10%;
+}
+
+.header_title {
+  float: left;
+  width: 20rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.header_title:hover {
+  cursor: pointer;
+}
+
+.header_tab {
+  float: right;
+  width: 8rem;
+  line-height: 3rem;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+.header_tab_last {
+  border: none;
+}
+
+.header_tab:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.header_tab_selected {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
