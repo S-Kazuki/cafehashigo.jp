@@ -41,3 +41,48 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
 }
+
+
+p.midashi {
+  font-size: 20px;
+  color: orange;
+  background-color: ;
+}
+p.midashi1{
+  font-size: 30px;
+  color: darkorange;
+  background-color: ;
+}
+
+
+p.midashi3{
+  font-size: 30px;
+  color: darkorange;
+  background-color: ;
+}
+
+span.time {
+  font-size: 15px;
+  color: pink;
+  background-color: ;
+}
+
+
+
+.top{
+  background-color: ;
+  width:100%;
+  height:100%;
+}
+.topleft{
+  float: left;
+  width:50%;
+  height:20%;
+  
+}
+.topright{
+  float: left;
+  width:50%;
+  height:20%;
+  
+}
