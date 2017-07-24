@@ -47,8 +47,8 @@
         <section>
           <h2>Installするもの</h2>
           <ul>
-            <li>Atom</li>
-            <li>Git Bash</li>
+            <li>Atom <br> <a href="https://atom.io/">https://atom.io/</a></li>
+            <li>Git Bash <br> <a href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a></li>
           </ul>
         </section>
         <section>
@@ -60,7 +60,7 @@
           </code></pre>
         </section>
         <section>
-          <h2>Atomの使い方</h2>
+          <h2>Atomの使い方を説明します</h2>
         </section>
         <section>
           <h2>What's html? What's css?</h2>
@@ -118,7 +118,7 @@
         <section>
           <h2>cssを読み込む</h2>
           <ol>
-            <li>cssフォルダにindex.cssという空のファイルを作る.</li>
+            <li>cssフォルダにindex.cssというファイルを作る.</li>
             <li>index.htmlのhead内に以下のタグを追加する.</li>
           </ol>
           <pre><code class="html" data-trim>
@@ -149,7 +149,7 @@
           </div>
         </section>
         <section>
-          <h1>ここからは一旦htmlの説明</h1>
+          <h2>ここからは一旦htmlの説明</h2>
         </section>
         <section>
           <h2>コメントアウト</h2>
@@ -221,7 +221,7 @@
             <p>どちらもそれ自身に意味はない</p>
             <p>"かたまり"を作るために使う</p>
             <p>divはブロック要素（その前後が改行される）</p>
-            <p>spanはインライン要素（その前後が改行されない）</p>
+            <p>spanはインライン要素（前後が改行されない）</p>
           </section>
           <section>
             <p>html</p>
@@ -326,7 +326,7 @@
           <p>Anchorの略でリンクの出発点と到達点を指定する</p>
           <pre><code class="html" data-trim>
             <a href="http://google.com"><p>Google</p></a>
-            <a href="http://jurakudai.org">聚楽第</a>
+            <a href="http://jurakudai.org"><p>聚楽第</p></a>
           </code></pre>
           <div class="white">
             <a href="http://google.com"><p>Google</p></a>
@@ -383,7 +383,7 @@
           </section>
         </section>
         <section>
-          <h1>ここからはcssの説明</h1>
+          <h2>ここからはcssの説明</h2>
         </section>
         <section>
           <h2>cssの基礎の復習</h2>
@@ -406,14 +406,38 @@
           <section>
             <h2>色々なセレクタ</h2>
             <ul>
-              <li><p>ユニバーサルセレクタ <br> → 要素全部を指定 <br> 書き方: *</p></li>
-              <li><p>要素セレクタ <br> → 各要素を指定 <br> 例: p, h1, div</p></li>
+              <li><p>ユニバーサルセレクタ <br> → 要素全部を指定 <br> 書き方: *</p>
+                <pre><code class="css" data-trim>
+                  * {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
+              <li><p>要素セレクタ <br> → 各要素を指定 <br> 例: p, h1, div</p>
+                <pre><code class="css" data-trim>
+                  p {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
             </ul>
           </section>
           <section>
             <ul>
-              <li><p>idセレクタ <br> → 各idを指定 <br> 書き方: #id名</p></li>
-              <li><p>classセレクタ <br> → 各classを指定 <br> 書き方: .class名</p></li>
+              <li><p>idセレクタ <br> → 各idを指定 <br> 書き方: #id名</p>
+                <pre><code class="css" data-trim>
+                  #jurakudai {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
+              <li><p>classセレクタ <br> → 各classを指定 <br> 書き方: .class名</p>
+                <pre><code class="css" data-trim>
+                  .jurakudai {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
             </ul>
           </section>
         </section>
@@ -454,6 +478,13 @@
             <li>codeの説明をしたいとき</li>
           </ul>
          <p>/*と*/で囲めばコメントアウトできる</p>
+         <pre><code class="css" data-trim>
+           /*
+           p {
+             color: red;
+           }
+           */
+         </code></pre>
         </section>
         <section>
           <section>
@@ -729,6 +760,9 @@
         </section>
         <section>
           <h2>position</h2>
+          <p>要素の位置を指定する</p>
+          <p>static, relative, fixed, absoluteの4つがある</p>
+          <p>参考: <a href="http://ja.learnlayout.com/position.html">http://ja.learnlayout.com/position.html</a></p>
         </section>
         <section>
           <h2>z-index</h2>
