@@ -41,3 +41,48 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
 }
+
+#keyVisual {
+  width: 100%;
+  height: auto;
+}
+#keyVisual img {
+  width: 100%;
+  height: auto;
+}
+#about {
+  background-color: rgba(209, 150, 104,0.5);
+  padding: 40px 30px;
+}
+#about h1 {
+  font-size: 18px;
+}
+#about span{
+  font-size: 14px;
+}
+#about p {
+  width:40%;
+}
+
+#inner-wrap-news{
+  width:100%;
+  height: auto;
+  background-color: rgba(242, 64, 100,0.5);
+}
+#news {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+}
+#news h1{
+  font-size: 18px;
+}
+#news ul{
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+#main li{
+  list-style-type: none;
+}
