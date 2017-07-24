@@ -42,47 +42,47 @@ a {
   color: white;
 }
 
-#keyVisual {
-  width: 100%;
-  height: auto;
+
+p.midashi {
+  font-size: 20px;
+  color: orange;
+  background-color: ;
 }
-#keyVisual img {
-  width: 100%;
-  height: auto;
-}
-#about {
-  background-color: rgba(209, 150, 104,0.5);
-  padding: 40px 30px;
-}
-#about h1 {
-  font-size: 18px;
-}
-#about span{
-  font-size: 14px;
-}
-#about p {
-  width:40%;
+p.midashi1{
+  font-size: 30px;
+  color: darkorange;
+  background-color: ;
 }
 
-#inner-wrap-news{
+
+p.midashi3{
+  font-size: 30px;
+  color: darkorange;
+  background-color: ;
+}
+
+span.time {
+  font-size: 15px;
+  color: pink;
+  background-color: ;
+}
+
+
+
+.top{
+  background-color: ;
   width:100%;
-  height: auto;
-  background-color: rgba(242, 64, 100,0.5);
+  height:100%;
 }
-#news {
-  width: 700px;
-  height: 500px;
-  margin: 0 auto;
+.topleft{
+  float: left;
+  width:50%;
+  height:20%;
+  
 }
-#news h1{
-  font-size: 18px;
-}
-#news ul{
-  list-style-type: none;
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0;
-}
-#main li{
-  list-style-type: none;
+.topright{
+  float: left;
+  width:50%;
+  height:20%;
+  
 }
