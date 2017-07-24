@@ -26,7 +26,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-          <h1>カフェはしご</h1>
+          <h1>カフェはしご＃</h1>
           <h2>Hackathon編</h2>
         </section>
 				<section>
@@ -47,8 +47,8 @@
         <section>
           <h2>Installするもの</h2>
           <ul>
-            <li>Atom</li>
-            <li>Git Bash</li>
+            <li>Atom <br> <a href="https://atom.io/">https://atom.io/</a></li>
+            <li>Git Bash <br> <a href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a></li>
           </ul>
         </section>
         <section>
@@ -60,7 +60,7 @@
           </code></pre>
         </section>
         <section>
-          <h2>Atomの使い方</h2>
+          <h2>Atomの使い方を説明します</h2>
         </section>
         <section>
           <h2>What's html? What's css?</h2>
@@ -118,7 +118,7 @@
         <section>
           <h2>cssを読み込む</h2>
           <ol>
-            <li>cssフォルダにindex.cssという空のファイルを作る.</li>
+            <li>cssフォルダにindex.cssというファイルを作る.</li>
             <li>index.htmlのhead内に以下のタグを追加する.</li>
           </ol>
           <pre><code class="html" data-trim>
@@ -149,7 +149,21 @@
           </div>
         </section>
         <section>
-          <h1>ここからは一旦htmlの説明</h1>
+          <h2>Googlability</h2>
+          <p>なんだかんだGooglability(ググる力)が大事です</p>
+        </section>
+        <section>
+          <h2>検証を上手く使いましょう</h2>
+          <p>やってみせます</p>
+        </section>
+        <section>
+          <h2>Bootstrap</h2>
+          <p>cssのフレームワーク</p>
+          <p>お手軽にデザインをいい感じにできる</p>
+          <p>けど、今日は使いません</p>
+        </section>
+        <section>
+          <h2>ここからは一旦htmlの説明</h2>
         </section>
         <section>
           <h2>コメントアウト</h2>
@@ -221,7 +235,7 @@
             <p>どちらもそれ自身に意味はない</p>
             <p>"かたまり"を作るために使う</p>
             <p>divはブロック要素（その前後が改行される）</p>
-            <p>spanはインライン要素（その前後が改行されない）</p>
+            <p>spanはインライン要素（前後が改行されない）</p>
           </section>
           <section>
             <p>html</p>
@@ -326,7 +340,7 @@
           <p>Anchorの略でリンクの出発点と到達点を指定する</p>
           <pre><code class="html" data-trim>
             <a href="http://google.com"><p>Google</p></a>
-            <a href="http://jurakudai.org">聚楽第</a>
+            <a href="http://jurakudai.org"><p>聚楽第</p></a>
           </code></pre>
           <div class="white">
             <a href="http://google.com"><p>Google</p></a>
@@ -383,7 +397,7 @@
           </section>
         </section>
         <section>
-          <h1>ここからはcssの説明</h1>
+          <h2>ここからはcssの説明</h2>
         </section>
         <section>
           <h2>cssの基礎の復習</h2>
@@ -406,14 +420,38 @@
           <section>
             <h2>色々なセレクタ</h2>
             <ul>
-              <li><p>ユニバーサルセレクタ <br> → 要素全部を指定 <br> 書き方: *</p></li>
-              <li><p>要素セレクタ <br> → 各要素を指定 <br> 例: p, h1, div</p></li>
+              <li><p>ユニバーサルセレクタ <br> → 要素全部を指定 <br> 書き方: *</p>
+                <pre><code class="css" data-trim>
+                  * {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
+              <li><p>要素セレクタ <br> → 各要素を指定 <br> 例: p, h1, div</p>
+                <pre><code class="css" data-trim>
+                  p {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
             </ul>
           </section>
           <section>
             <ul>
-              <li><p>idセレクタ <br> → 各idを指定 <br> 書き方: #id名</p></li>
-              <li><p>classセレクタ <br> → 各classを指定 <br> 書き方: .class名</p></li>
+              <li><p>idセレクタ <br> → 各idを指定 <br> 書き方: #id名</p>
+                <pre><code class="css" data-trim>
+                  #jurakudai {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
+              <li><p>classセレクタ <br> → 各classを指定 <br> 書き方: .class名</p>
+                <pre><code class="css" data-trim>
+                  .jurakudai {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
             </ul>
           </section>
         </section>
@@ -454,10 +492,294 @@
             <li>codeの説明をしたいとき</li>
           </ul>
          <p>/*と*/で囲めばコメントアウトできる</p>
+         <pre><code class="css" data-trim>
+           /*
+           p {
+             color: red;
+           }
+           */
+         </code></pre>
         </section>
         <section>
-          <h2>color</h2>
-          <p>文字の色を変える</p>
+          <section>
+            <h2>color</h2>
+            <p>文字の色を変える</p>
+            <p>html</p>
+            <pre><code class="html" data-trim>
+              <p>こんにちは</p>
+            </code></pre>
+            <p>css</p>
+            <pre><code class="css" data-trim>
+              p {
+                color: red;
+              }
+            </code></pre>
+            <div class="white">
+              <p style="color:red">こんにちは</p>
+            </div>
+          </section>
+          <section>
+            <p>色の指定方法は色々ある</p>
+            <ul>
+              <li>キーワード指定
+                <pre><code class="css" data-trim>
+                  p {
+                    color: red;
+                  }
+                </code></pre>
+              </li>
+              <li>RGB指定
+                <pre><code class="css" data-trim>
+                  p {
+                    color: #ff0000;
+                  }
+                </code></pre>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>font-size</h2>
+            <p>文字の大きさ変える</p>
+            <pre><code class="html" data-trim>
+              <p>こんにちは</p>
+            </code></pre>
+            <pre><code class="css" data-trim>
+              p {
+                font-size: 100px;
+              }
+            </code></pre>
+            <div class="white">
+              <p style="font-size: 100px">こんにちは</p>
+            </div>
+          </section>
+          <section>
+            <h2>font-weight</h2>
+            <p>文字の太さを変える</p>
+            <pre><code class="html" data-trim>
+              <p>こんにちは</p>
+            </code></pre>
+            <pre><code class="css" data-trim>
+              p {
+                font-weight: bold;
+              }
+            </code></pre>
+            <div class="white">
+              <p style="font-weight: bold">こんにちは</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>text-align</h2>
+            <p>行揃えの位置を指定する</p>
+            <pre><code class="html" data-trim>
+              <p class="first">おはよう</p>
+              <p class="second">こんにちは</p>
+              <p class="third">こんばんは</p>
+            </code></pre>
+            <pre><code class="css" data-trim>
+              .first {
+                text-align: left;
+              }
+
+              .second {
+                text-align: center;
+              }
+
+              .third {
+                text-align: right;
+              }
+            </code></pre>
+          </section>
+          <section>
+            <div class="white">
+              <p style="text-align: left">おはよう</p>
+              <p style="text-align: center">こんにちは</p>
+              <p style="text-align: right">こんばんは</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>line-height</h2>
+          <p>行の高さを指定する</p>
+          <pre><code class="html" data-trim>
+            <p>行の高さを変えられるよ.行の高さを変えられるよ.
+              行の高さを変えられるよ.行の高さを変えられるよ.
+              行の高さを変えられるよ.行の高さを変えられるよ.</p>
+          </code></pre>
+          <pre><code class="css" data-trim>
+            p {
+              line-height: 70px;
+            }
+          </code></pre>
+          <div class="white">
+            <p style="line-height: 70px">行の高さを変えられるよ.行の高さを変えられるよ.
+              行の高さを変えられるよ.行の高さを変えられるよ.
+              行の高さを変えられるよ.行の高さを変えられるよ.</p>
+          </div>
+        </section>
+        <section>
+          <section>
+            <h2>background-color</h2>
+            <p>背景色を指定する</p>
+            <pre><code class="html" data-trim>
+              <div class="aka">
+                <p>背景は赤色</p>
+              </div>
+            </code></pre>
+            <pre><code class="css" data-trim>
+              .aka {
+                background-color: red;
+              }
+            </code></pre>
+            <div class="white">
+              <div style="background-color: red">
+                <p>背景は赤色</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>background-image</h2>
+            <p>背景画像を指定する</p>
+            <pre><code class="html" data-trim>
+              <div class="jurakudai">
+                <p>背景は聚楽第ロゴ</p>
+                <p>背景は聚楽第ロゴ</p>
+                <p>背景は聚楽第ロゴ</p>
+              </div>
+            </code></pre>
+            <pre><code class="css" data-trim>
+              .jurakudai {
+                background-image: url('./img/jurakudai_logo.png');
+              }
+            </code></pre>
+            <div class="white">
+              <div style="background-image: url('./img/jurakudai_logo.png')">
+                <p>背景は聚楽第ロゴ</p>
+                <p>背景は聚楽第ロゴ</p>
+                <p>背景は聚楽第ロゴ</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>border</h2>
+          <p>枠線を指定する</p>
+          <pre><code class="html" data-trim>
+            <div class="wakusen">
+              <p>枠線を付けられる</p>
+            </div>
+          </code></pre>
+          <pre><code class="css" data-trim>
+            .wakusen {
+              border: solid red;
+            }
+          </code></pre>
+          <div class="white">
+            <div style="border: solid red">
+              <p>枠線を付けられる</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <section>
+            <h2>widthとheight</h2>
+            <p>widthは幅を, heightは高さを指定する</p>
+            <pre><code class="html" data-trim>
+              <div class="wide">
+                <p>横長</p>
+              </div>
+              <div class="height">
+                <p>縦長</p>
+              </div>
+            </code></pre>
+            <pre><code class="css" data-trim>
+              .wide {
+                width:
+                height:
+                border: solid red;
+              }
+
+              .high {
+                width:
+                height:
+                border: solid blue;
+              }
+            </code></pre>
+          </section>
+          <section>
+            <div class="white">
+              <div class="wide" style="width: 300px; height: 100px; border: solid red;">
+                <p>横長</p>
+              </div>
+              <div class="height" style="width: 100px; height: 300px; border: solid blue;">
+                <p>縦長</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>marginとpadding</h2>
+          <p>margin: 要素の外側の余白</p>
+          <p>padding: 要素の内側の余白</p>
+          <p>参考: <a href="http://scene-live.com/page.php?page=49">http://scene-live.com/page.php?page=49</a></p>
+        </section>
+        <section>
+          <section>
+            <h2>float</h2>
+            <p>要素を横並びにできる</p>
+            <pre><code class="html" data-trim>
+              <div class="yokonarabi">
+                1個目
+              </div>
+              <div class="yokonarabi">
+                2個目
+              </div>
+              <div class="yokonarabi">
+                3個目
+              </div>
+            </code></pre>
+            <div class="white">
+              <div class="yokonarabi">
+                1個目
+              </div>
+              <div class="yokonarabi">
+                2個目
+              </div>
+              <div class="yokonarabi">
+                3個目
+              </div>
+            </div>
+          </section>
+          <section>
+            <pre><code class="css" data-trim>
+              .yokonarabi {
+                float: left;
+              }
+            </code></pre>
+            <div class="white" style="height: 100px">
+              <div class="yokonarabi" style="float: left">
+                1個目
+              </div>
+              <div class="yokonarabi" style="float: left">
+                2個目
+              </div>
+              <div class="yokonarabi" style="float: left">
+                3個目
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>position</h2>
+          <p>要素の位置を指定する</p>
+          <p>static, relative, fixed, absoluteの4つがある</p>
+          <p>参考: <a href="http://ja.learnlayout.com/position.html">http://ja.learnlayout.com/position.html</a></p>
+        </section>
+        <section>
+          <h2>z-index</h2>
         </section>
 			</div>
 		</div>
